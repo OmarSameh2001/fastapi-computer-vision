@@ -11,8 +11,7 @@ is_cuda_available = torch.cuda.is_available()
 print(f"Is CUDA available? {is_cuda_available}")
 
 # Load the YOLO model (ensure it's the correct classification or detection model)
-model = YOLO('https://drive.google.com/uc?export=download&id=10MCPKxEnlsS2ZWLV1a8FF-TMs8OHm-Xt')  # Ensure this is either a classification or detection model
-
+model = YOLO('https://drive.google.com/uc?export=download&id=10MCPKxEnlsS2ZWLV1a8FF-TMs8OHm-Xt')  # or to your local model
 # Optionally, send the model to the GPU if CUDA is available
 if is_cuda_available:
     model = model.to('cuda')
