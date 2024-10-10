@@ -1,11 +1,11 @@
 # Updated requirements.txt with compatible versions
 annotated-types==0.7.0
-anyio==4.6.0
+anyio==3.6.2  # Changed to ensure compatibility
 certifi==2024.8.30
 charset-normalizer==3.4.0
 click==8.1.7
 colorama==0.4.6
-fastapi==0.95.2  # Update to a stable version
+fastapi==0.95.2  # Use a stable version of FastAPI
 filelock==3.16.1
 h11==0.14.0
 idna==3.10
@@ -15,7 +15,7 @@ MarkupSafe==3.0.1
 numpy==1.21.6
 packaging==24.1
 pillow==10.4.0
-pydantic==1.10.12  # Downgrade to a version compatible with Python 3.9
+pydantic==1.10.12  # Downgraded for compatibility
 pyparsing==3.1.4
 python-dateutil==2.9.0.post0
 python-multipart==0.0.12
@@ -23,12 +23,12 @@ requests==2.32.3
 setuptools==75.1.0
 six==1.16.0
 sniffio==1.3.1
-starlette==0.22.0  # Updated to ensure compatibility with FastAPI
-torch==1.13.1  # Ensure compatibility with Python 3.9
-torchvision==0.14.1  # Ensure compatible version with torch
+starlette==0.20.4  # Downgraded to a version compatible with FastAPI
+torch==1.13.1  # Use a version that is compatible with Python 3.9
+torchvision==0.14.1  # Make sure it matches the torch version
 tqdm==4.66.5
 typing_extensions==4.12.2
 ultralytics==8.3.9
 ultralytics-thop==2.0.9
 urllib3==2.2.3
-uvicorn==0.21.1  # Updated to a stable version
+uvicorn==0.21.1  # Updated to the latest stable version
